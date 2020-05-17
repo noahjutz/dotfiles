@@ -11,6 +11,6 @@ sudo pacman -Syy
 sudo pacman -S --noconfirm fish yay code discord tor torbrowser-launcher htop virtualbox ranger
 yay -S android-studio bitwarden
 
-# Setup dependent on packages #
+# Restore backup #
 
-dconf load / < .backup/gnome-settings
+sh restore.sh
