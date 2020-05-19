@@ -2,6 +2,13 @@
 height=476
 width=600
 
+[ca/desrt/dconf-editor]
+saved-pathbar-path='/org/gnome/shell/app-switcher/'
+saved-view='/org/gnome/shell/app-switcher/'
+window-height=720
+window-is-maximized=false
+window-width=1117
+
 [com/github/maoschanz/DynamicWallpaperEditor]
 display-mode='list'
 
@@ -71,7 +78,7 @@ show-battery-percentage=false
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-nautilus', 'gnome-power-panel', 'firefox', 'android-studio', 'brave-browser']
+application-children=['org-gnome-nautilus', 'gnome-power-panel', 'firefox', 'android-studio', 'brave-browser', 'org-manjaro-pamac-manager']
 show-banners=true
 
 [org/gnome/desktop/notifications/application/android-studio]
@@ -88,6 +95,9 @@ application-id='gnome-power-panel.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-manjaro-pamac-manager]
+application-id='org.manjaro.pamac.manager.desktop'
 
 [org/gnome/desktop/peripherals/keyboard]
 numlock-state=true
@@ -121,7 +131,11 @@ switch-to-workspace-3=['<Alt>3']
 switch-to-workspace-4=['<Alt>4']
 
 [org/gnome/desktop/wm/preferences]
+auto-raise=false
 button-layout=':minimize,maximize,close'
+focus-mode='click'
+mouse-button-modifier='<Super>'
+resize-with-right-button=true
 titlebar-font='Cantarell Bold 11'
 
 [org/gnome/evolution-data-server]
@@ -135,9 +149,11 @@ logfiles=['/var/log/lastlog', '/var/log/pacman.log', '/var/log/Calamares.log']
 width=652
 
 [org/gnome/mutter]
+attach-modal-dialogs=true
+center-new-windows=false
 dynamic-workspaces=false
 overlay-key='Super_L'
-workspaces-only-on-primary=false
+workspaces-only-on-primary=true
 
 [org/gnome/nautilus/compression]
 default-compression-format='zip'
@@ -168,6 +184,7 @@ command='gnome-terminal'
 name='Terminal'
 
 [org/gnome/settings-daemon/plugins/xsettings]
+antialiasing='grayscale'
 hinting='slight'
 
 [org/gnome/shell]
@@ -176,6 +193,9 @@ disable-user-extensions=false
 disabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com', 'nightshellswitcher@romainvigier.fr', 'nightthemeswitcher@romainvigier.fr', 'arc-menu@linxgem33.com', 'unite@hardpixel.eu', 'ding@rastersoft.com']
 enabled-extensions=['pamac-updates@manjaro.org', 'appindicatorsupport@rgcjonas.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com']
 favorite-apps=['android-studio.desktop', 'brave-browser.desktop', 'torbrowser.desktop', 'code-oss.desktop']
+
+[org/gnome/shell/app-switcher]
+current-workspace-only=true
 
 [org/gnome/shell/extensions/arc-menu]
 arc-menu-placement='DTD'
@@ -198,9 +218,9 @@ custom-theme-customize-running-dots=true
 custom-theme-running-dots-border-color='#ffffff'
 custom-theme-running-dots-border-width=0
 custom-theme-running-dots-color='#ffffff'
-custom-theme-shrink=false
+custom-theme-shrink=true
 dash-max-icon-size=32
-dock-fixed=false
+dock-fixed=true
 dock-position='BOTTOM'
 extend-height=false
 hot-keys=false
@@ -242,6 +262,9 @@ name=''
 
 [org/gnome/shell/world-clocks]
 locations=@av []
+
+[org/gnome/terminal/legacy/keybindings]
+prev-tab='<Primary>Page_Up'
 
 [org/gnome/terminal/legacy/profiles:]
 default='cf6bccaf-8255-47e8-8243-72a6e52842ed'
