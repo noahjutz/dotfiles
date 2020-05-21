@@ -1,6 +1,24 @@
 # dotfiles
 My linux configuration files.
 
+## Content
+- Exported settings `.backup/`
+    - GNOME `gnome-settings`
+- Shell
+    - fish `.config/fish/`
+    - bash `.bashrc`
+- Scripts `.scripts/`
+    - `auto-install.sh` for full installation
+    - `backup.sh` to backup exported settings
+    - `restore.sh` to restore exported settings
+- Programs
+    - i3 config `.i3/config`
+    - Ranger `.config/ranger/`
+    - vim  `.vimrc`
+- Fonts `.fonts/`
+    - Roboto
+    - Roboto Mono
+
 ## How to install
 **Clone and checkout the repository**
 ```sh
@@ -13,7 +31,7 @@ $ ~/.scripts/auto-install.sh
 ```
 
 ## Using
-**Backing up**
+**Back up settings that aren't saved as dotfiles**
 ```sh
 $ ~/.scripts/backup.sh
 ```
