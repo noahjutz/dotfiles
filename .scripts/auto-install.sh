@@ -13,4 +13,4 @@ yay -S android-studio bitwarden
 
 # Restore backup #
 
-sh restore.sh
+sh ~/.scripts/restore.sh
