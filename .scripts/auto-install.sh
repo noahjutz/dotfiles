@@ -8,7 +8,7 @@ echo ".cfg" >> .gitignore
 # Install packages #
 
 sudo pacman -Syy
-sudo pacman -S --noconfirm fish yay code discord tor torbrowser-launcher htop virtualbox ranger etcher brave wipe
+sudo pacman -S --noconfirm fish yay code discord tor torbrowser-launcher htop virtualbox ranger etcher brave wipe gimp
 yay -S android-studio bitwarden
 
 # Restore backup #
