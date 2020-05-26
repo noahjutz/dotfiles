@@ -1,9 +1,0 @@
-[user]
-	name = noahjutz
-	email = noah.jutz@gmail.com
-[credential]
-	helper = store
-[core]
-	editor = vim
-[alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit

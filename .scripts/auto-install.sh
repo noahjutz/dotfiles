@@ -12,5 +12,7 @@ sudo pacman -S --noconfirm fish yay code discord tor torbrowser-launcher htop vi
 yay -S android-studio bitwarden
 
 # Restore backup #
-
 sh ~/.scripts/restore.sh
+
+# Change shell to fish #
+chsh -s /bin/fish
