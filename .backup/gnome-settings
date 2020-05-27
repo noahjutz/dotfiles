@@ -19,7 +19,7 @@ burst-delay=1000
 world-clocks=@aa{sv} []
 
 [org/gnome/control-center]
-last-panel='background'
+last-panel='keyboard'
 
 [org/gnome/deja-dup]
 backend='google'
@@ -124,8 +124,6 @@ secondary-color='#000000000000'
 idle-delay=uint32 300
 
 [org/gnome/desktop/wm/keybindings]
-maximize-horizontally=['<Alt><Super>Right']
-maximize-vertically=['<Alt><Super>Up']
 move-to-workspace-1=['<Shift><Alt>exclam']
 move-to-workspace-2=['<Shift><Alt>at']
 move-to-workspace-3=['<Shift><Alt>numbersign']
@@ -202,8 +200,8 @@ hinting='slight'
 [org/gnome/shell]
 app-picker-view=uint32 1
 disable-user-extensions=false
-disabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'nightshellswitcher@romainvigier.fr', 'nightthemeswitcher@romainvigier.fr', 'unite@hardpixel.eu', 'ding@rastersoft.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['pamac-updates@manjaro.org', 'appindicatorsupport@rgcjonas.gmail.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'arc-menu@linxgem33.com']
+disabled-extensions=['nightshellswitcher@romainvigier.fr', 'nightthemeswitcher@romainvigier.fr', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'ding@rastersoft.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'unite@hardpixel.eu', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'arc-menu@linxgem33.com', 'wintile@nowsci.com']
+enabled-extensions=['pamac-updates@manjaro.org', 'appindicatorsupport@rgcjonas.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com']
 favorite-apps=['android-studio.desktop', 'brave-browser.desktop', 'torbrowser.desktop']
 
 [org/gnome/shell/app-switcher]
@@ -220,7 +218,7 @@ custom-menu-button-text=' Applications'
 directory-shortcuts-list=@aas []
 disable-category-arrows=false
 disable-tooltips=false
-dtp-dtd-state=[true, false]
+dtp-dtd-state=[false, false]
 enable-custom-arc-menu=true
 enable-custom-arc-menu-layout=true
 enable-custom-shortcuts=true
@@ -240,7 +238,7 @@ menu-color='rgba(28, 28, 28, 0.98)'
 menu-corner-radius=0
 menu-font-size=9
 menu-foreground-color='rgba(211, 218, 227, 1)'
-menu-height=550
+menu-height=390
 menu-hotkey='Super_L'
 menu-layout='Chromebook'
 menu-margin=0
@@ -257,7 +255,7 @@ ubuntu-dash-pinned-app-list=['Home', 'ArcMenu_Home', 'ArcMenu_Home', 'Documents'
 vert-separator=false
 
 [org/gnome/shell/extensions/auto-move-windows]
-application-list=['brave-browser.desktop:2', 'torbrowser.desktop:2']
+application-list=['brave-browser.desktop:2', 'torbrowser.desktop:2', 'android-studio.desktop:1']
 
 [org/gnome/shell/extensions/dash-to-dock]
 animate-show-apps=false
@@ -339,8 +337,19 @@ theme-day='Adwaita'
 theme-night='Adwaita-dark'
 theme-original='Adwaita-dark'
 
+[org/gnome/shell/extensions/unite]
+autofocus-windows=true
+greyscale-tray-icons=false
+hide-dropdown-arrows=true
+
 [org/gnome/shell/extensions/user-theme]
 name=''
+
+[org/gnome/shell/extensions/wintile]
+cols=0
+delay=100
+distance=50
+use-maximize=true
 
 [org/gnome/shell/world-clocks]
 locations=@av []
