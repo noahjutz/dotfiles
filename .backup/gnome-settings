@@ -202,7 +202,7 @@ hinting='slight'
 [org/gnome/shell]
 app-picker-view=uint32 1
 disable-user-extensions=false
-disabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'nightshellswitcher@romainvigier.fr', 'nightthemeswitcher@romainvigier.fr', 'arc-menu@linxgem33.com', 'unite@hardpixel.eu', 'ding@rastersoft.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com']
+disabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'nightshellswitcher@romainvigier.fr', 'nightthemeswitcher@romainvigier.fr', 'unite@hardpixel.eu', 'ding@rastersoft.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'arc-menu@linxgem33.com']
 enabled-extensions=['pamac-updates@manjaro.org', 'appindicatorsupport@rgcjonas.gmail.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com']
 favorite-apps=['android-studio.desktop', 'brave-browser.desktop', 'torbrowser.desktop']
 
@@ -213,7 +213,7 @@ current-workspace-only=true
 arc-menu-placement='DTD'
 custom-menu-button-icon-size=32.0
 custom-menu-button-text=' Applications'
-dtp-dtd-state=[false, true]
+dtp-dtd-state=[true, false]
 menu-button-appearance='Icon'
 menu-layout='UbuntuDash'
 pinned-app-list=['Firefox', 'firefox', 'firefox.desktop', 'Terminal', 'utilities-terminal', 'org.gnome.Terminal.desktop', 'Arc Menu Settings', 'ArcMenu_ArcMenuIcon', 'gnome-shell-extension-prefs arc-menu@linxgem33.com']
@@ -283,8 +283,12 @@ isolate-workspaces=true
 location-clock='STATUSRIGHT'
 panel-position='BOTTOM'
 panel-size=48
+show-activities-button=false
+show-apps-icon-file=''
+show-apps-icon-side-padding=0
 show-running-apps=true
 show-show-apps-button=true
+show-showdesktop-button=false
 stockgs-force-hotcorner=false
 stockgs-keep-dash=false
 taskbar-position='CENTEREDMONITOR'
@@ -369,7 +373,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(0, 57)
+window-position=(26, 23)
 window-size=(1369, 902)
 
 [org/gtkhash/plugin]
