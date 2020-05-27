@@ -202,23 +202,59 @@ hinting='slight'
 [org/gnome/shell]
 app-picker-view=uint32 1
 disable-user-extensions=false
-disabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'nightshellswitcher@romainvigier.fr', 'nightthemeswitcher@romainvigier.fr', 'unite@hardpixel.eu', 'ding@rastersoft.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'arc-menu@linxgem33.com']
-enabled-extensions=['pamac-updates@manjaro.org', 'appindicatorsupport@rgcjonas.gmail.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com']
+disabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'nightshellswitcher@romainvigier.fr', 'nightthemeswitcher@romainvigier.fr', 'unite@hardpixel.eu', 'ding@rastersoft.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['pamac-updates@manjaro.org', 'appindicatorsupport@rgcjonas.gmail.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'arc-menu@linxgem33.com']
 favorite-apps=['android-studio.desktop', 'brave-browser.desktop', 'torbrowser.desktop']
 
 [org/gnome/shell/app-switcher]
 current-workspace-only=true
 
 [org/gnome/shell/extensions/arc-menu]
-arc-menu-placement='DTD'
-custom-menu-button-icon-size=32.0
+application-shortcuts-list=@aas []
+arc-menu-placement='DTP'
+avatar-style='Circular'
+border-color='rgb(63,62,64)'
+custom-menu-button-icon='/usr/share/icons/manjaro/white/white-symbolic.svg'
+custom-menu-button-icon-size=16.0
 custom-menu-button-text=' Applications'
+directory-shortcuts-list=@aas []
+disable-category-arrows=false
+disable-tooltips=false
 dtp-dtd-state=[true, false]
+enable-custom-arc-menu=true
+enable-custom-arc-menu-layout=true
+enable-custom-shortcuts=true
+enable-large-icons=false
+enable-menu-button-arrow=false
+enable-pinned-apps=true
+enable-sub-menus=false
+gap-adjustment=0
+highlight-color='rgba(238, 238, 236, 0.1)'
+krunner-show-details=true
+menu-arrow-size=0
+menu-border-size=0
 menu-button-appearance='Icon'
-menu-layout='UbuntuDash'
-pinned-app-list=['Firefox', 'firefox', 'firefox.desktop', 'Terminal', 'utilities-terminal', 'org.gnome.Terminal.desktop', 'Arc Menu Settings', 'ArcMenu_ArcMenuIcon', 'gnome-shell-extension-prefs arc-menu@linxgem33.com']
+menu-button-color='rgb(186,189,182)'
+menu-button-icon='Custom_Icon'
+menu-color='rgba(28, 28, 28, 0.98)'
+menu-corner-radius=0
+menu-font-size=9
+menu-foreground-color='rgba(211, 218, 227, 1)'
+menu-height=550
+menu-hotkey='Super_L'
+menu-layout='Chromebook'
+menu-margin=0
+menu-width=290
+pinned-app-list=@as []
+position-in-panel='Left'
+reload-theme=false
 remove-menu-arrow=true
+right-panel-width=205
+runner-position='Centered'
+separator-color='rgb(63,62,64)'
+show-external-devices=false
 ubuntu-dash-pinned-app-list=['Home', 'ArcMenu_Home', 'ArcMenu_Home', 'Documents', 'ArcMenu_Documents', 'ArcMenu_Documents', 'Downloads', 'ArcMenu_Downloads', 'ArcMenu_Downloads', 'Software', 'org.gnome.Software', 'org.gnome.Software.desktop', 'Files', 'system-file-manager', 'org.gnome.Nautilus.desktop', 'Log Out', 'application-exit-symbolic', 'ArcMenu_LogOut', 'Lock', 'changes-prevent-symbolic', 'ArcMenu_Lock', 'Power Off', 'system-shutdown-symbolic', 'ArcMenu_PowerOff']
+vert-separator=false
 
 [org/gnome/shell/extensions/auto-move-windows]
 application-list=['brave-browser.desktop:2', 'torbrowser.desktop:2']
@@ -287,7 +323,7 @@ show-activities-button=false
 show-apps-icon-file=''
 show-apps-icon-side-padding=0
 show-running-apps=true
-show-show-apps-button=true
+show-show-apps-button=false
 show-showdesktop-button=false
 stockgs-force-hotcorner=false
 stockgs-keep-dash=false
@@ -359,8 +395,8 @@ use-theme-transparency=false
 visible-name='Dracula'
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.074509803921568626, 0.098039215686274508, 0.10980392156862745, 1.0), (0.0, 0.16862745098039217, 0.21176470588235294, 1.0)]
-selected-color=(true, 0.0, 0.0, 0.0, 1.0)
+custom-colors=[(0.94117647058823528, 0.94117647058823528, 0.94117647058823528, 1.0), (0.074509803921568626, 0.098039215686274508, 0.10980392156862745, 1.0), (0.0, 0.16862745098039217, 0.21176470588235294, 1.0)]
+selected-color=(true, 0.72941176470588232, 0.74117647058823533, 0.71372549019607845, 1.0)
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
