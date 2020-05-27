@@ -202,8 +202,8 @@ hinting='slight'
 [org/gnome/shell]
 app-picker-view=uint32 1
 disable-user-extensions=false
-disabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'nightshellswitcher@romainvigier.fr', 'nightthemeswitcher@romainvigier.fr', 'arc-menu@linxgem33.com', 'unite@hardpixel.eu', 'ding@rastersoft.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com']
-enabled-extensions=['pamac-updates@manjaro.org', 'appindicatorsupport@rgcjonas.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com']
+disabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'nightshellswitcher@romainvigier.fr', 'nightthemeswitcher@romainvigier.fr', 'arc-menu@linxgem33.com', 'unite@hardpixel.eu', 'ding@rastersoft.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['pamac-updates@manjaro.org', 'appindicatorsupport@rgcjonas.gmail.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com']
 favorite-apps=['android-studio.desktop', 'brave-browser.desktop', 'torbrowser.desktop']
 
 [org/gnome/shell/app-switcher]
@@ -219,6 +219,9 @@ menu-layout='UbuntuDash'
 pinned-app-list=['Firefox', 'firefox', 'firefox.desktop', 'Terminal', 'utilities-terminal', 'org.gnome.Terminal.desktop', 'Arc Menu Settings', 'ArcMenu_ArcMenuIcon', 'gnome-shell-extension-prefs arc-menu@linxgem33.com']
 remove-menu-arrow=true
 ubuntu-dash-pinned-app-list=['Home', 'ArcMenu_Home', 'ArcMenu_Home', 'Documents', 'ArcMenu_Documents', 'ArcMenu_Documents', 'Downloads', 'ArcMenu_Downloads', 'ArcMenu_Downloads', 'Software', 'org.gnome.Software', 'org.gnome.Software.desktop', 'Files', 'system-file-manager', 'org.gnome.Nautilus.desktop', 'Log Out', 'application-exit-symbolic', 'ArcMenu_LogOut', 'Lock', 'changes-prevent-symbolic', 'ArcMenu_Lock', 'Power Off', 'system-shutdown-symbolic', 'ArcMenu_PowerOff']
+
+[org/gnome/shell/extensions/auto-move-windows]
+application-list=['brave-browser.desktop:2', 'torbrowser.desktop:2']
 
 [org/gnome/shell/extensions/dash-to-dock]
 animate-show-apps=false
@@ -271,6 +274,7 @@ dot-style-unfocused='DASHES'
 focus-highlight=true
 focus-highlight-color='#eeeeee'
 focus-highlight-dominant=false
+force-check-update=false
 group-apps=true
 group-apps-label-font-color='#dddddd'
 hotkeys-overlay-combo='TEMPORARILY'
@@ -365,7 +369,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(26, 23)
+window-position=(0, 57)
 window-size=(1369, 902)
 
 [org/gtkhash/plugin]
