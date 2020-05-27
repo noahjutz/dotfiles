@@ -144,6 +144,7 @@ focus-mode='click'
 mouse-button-modifier='<Super>'
 resize-with-right-button=true
 titlebar-font='Cantarell Bold 11'
+workspace-names=@as []
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -171,7 +172,7 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1015, 736)
+initial-size=(1015, 761)
 maximized=false
 
 [org/gnome/settings-daemon/plugins/color]
@@ -201,9 +202,9 @@ hinting='slight'
 [org/gnome/shell]
 app-picker-view=uint32 1
 disable-user-extensions=false
-disabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com', 'nightshellswitcher@romainvigier.fr', 'nightthemeswitcher@romainvigier.fr', 'arc-menu@linxgem33.com', 'unite@hardpixel.eu', 'ding@rastersoft.com']
-enabled-extensions=['pamac-updates@manjaro.org', 'appindicatorsupport@rgcjonas.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com']
-favorite-apps=['android-studio.desktop', 'brave-browser.desktop', 'torbrowser.desktop', 'code-oss.desktop']
+disabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'nightshellswitcher@romainvigier.fr', 'nightthemeswitcher@romainvigier.fr', 'arc-menu@linxgem33.com', 'unite@hardpixel.eu', 'ding@rastersoft.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com']
+enabled-extensions=['pamac-updates@manjaro.org', 'appindicatorsupport@rgcjonas.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com']
+favorite-apps=['android-studio.desktop', 'brave-browser.desktop', 'torbrowser.desktop']
 
 [org/gnome/shell/app-switcher]
 current-workspace-only=true
@@ -253,10 +254,36 @@ transparency-mode='DEFAULT'
 unity-backlit-items=false
 
 [org/gnome/shell/extensions/dash-to-panel]
+animate-app-switch=true
+animate-show-apps=false
+appicon-margin=0
+appicon-padding=10
+dot-color-1='#5294e2'
+dot-color-2='#5294e2'
+dot-color-3='#5294e2'
+dot-color-4='#5294e2'
+dot-color-unfocused-1='#5294e2'
+dot-color-unfocused-2='#5294e2'
+dot-color-unfocused-3='#5294e2'
+dot-color-unfocused-4='#5294e2'
+dot-style-focused='DASHES'
+dot-style-unfocused='DASHES'
+focus-highlight=true
+focus-highlight-color='#eeeeee'
+focus-highlight-dominant=false
+group-apps=true
+group-apps-label-font-color='#dddddd'
+hotkeys-overlay-combo='TEMPORARILY'
+intellihide=false
+isolate-workspaces=true
+location-clock='STATUSRIGHT'
 panel-position='BOTTOM'
 panel-size=48
 show-running-apps=true
-show-show-apps-button=false
+show-show-apps-button=true
+stockgs-force-hotcorner=false
+stockgs-keep-dash=false
+taskbar-position='CENTEREDMONITOR'
 
 [org/gnome/shell/extensions/nightshellswitcher]
 theme-day='Matcha-sea'
