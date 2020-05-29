@@ -55,7 +55,7 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/noah/.wallpaper.png'
+picture-uri='file:///home/noah/Pictures/.wallpaper.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -116,7 +116,7 @@ two-finger-scrolling-enabled=true
 color-shading-type='solid'
 lock-delay=uint32 0
 picture-options='zoom'
-picture-uri='file:///home/noah/.local/share/backgrounds/2020-05-25-12-31-51-wallp-dracula.png'
+picture-uri='file:///home/noah/.local/share/backgrounds/2020-05-13-19-22-53-wallp.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
