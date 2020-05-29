@@ -15,8 +15,12 @@ config_shell() {
 
 install_packages() {
 	sudo pacman -Syy
-	sudo pacman -S --noconfirm fish yay code discord tor torbrowser-launcher htop virtualbox ranger etcher brave wipe gimp gvim
-	yay -S android-studio bitwarden
+	if [[ $inp_install_pkg == [Ff] ]]; then
+		sudo pacman -S --noconfirm $(cat pacman-full pacman-min)
+		yay -S $(cat yay-full)
+	elif [[ $inp_install_pkg == [Mm] ]]; then
+		sudo pacman -S --noconfirm $(cat pacman-min)
+	fi
 }
 
 # parameters
@@ -35,11 +39,11 @@ esac
 
 if [[ $1 == "-m" ]]; then
 	echo Select what to do. Default is Y.
-	read -p ":: Config repo? [Y/n]: "	inp_cfg_repo
-	read -p ":: Restore backup? [Y/n]: "	inp_restore
-	read -p ":: Config shell? [Y/n]: "	inp_cfg_sh
-	read -p ":: Install packages? [Y/n]: "	inp_install_pkg
-	read -p ":: Execute? [Y/n]: "		inp_execute
+	read -p ":: Config repo? [Y/n]: "		inp_cfg_repo
+	read -p ":: Restore backup? [Y/n]: "		inp_restore
+	read -p ":: Config shell? [Y/n]: "		inp_cfg_sh
+	read -p ":: Install packages? [f/m/n]: "	inp_install_pkg
+	read -p ":: Execute? [Y/n]: "			inp_execute
 fi
 
 if [[ $inp_execute == [Nn] ]]; then
