@@ -1,14 +1,11 @@
 #!/bin/bash
 
 # parameters
-if [[ $1 == "-f" ]] || [[ $1 == "--full" ]];then
-	echo FULL
-elif [[ $1 == "-m" ]] || [[ $1 == "--minimal" ]];then
-	echo MINIMAL
-else
-	cat "help"
-	exit
-fi
+case $1 in
+	"-f" ) echo FULL;;
+	"-m" ) echo MINIMAL;;
+	* ) cat "help"; exit;;
+esac
 
 # git
 /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME config --local status.showUntrackedFiles no
