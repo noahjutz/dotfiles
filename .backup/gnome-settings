@@ -19,7 +19,7 @@ burst-delay=1000
 world-clocks=@aa{sv} []
 
 [org/gnome/control-center]
-last-panel='network'
+last-panel='background'
 
 [org/gnome/deja-dup]
 backend='google'
@@ -55,7 +55,7 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/noah/.local/share/backgrounds/2020-05-25-12-31-51-wallp-dracula.png'
+picture-uri='file:///home/noah/.wallpaper.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -351,6 +351,7 @@ hide-app-menu-arrow=true
 hide-app-menu-icon=true
 hide-dropdown-arrows=true
 hide-window-titlebars='never'
+notifications-position='right'
 reduce-panel-spacing=false
 show-desktop-name=true
 show-legacy-tray=true
@@ -427,7 +428,7 @@ selected-color=(true, 0.72941176470588232, 0.74117647058823533, 0.71372549019607
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=163
@@ -435,7 +436,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(596, 76)
+window-position=(26, 23)
 window-size=(1369, 902)
 
 [org/gtkhash/plugin]
