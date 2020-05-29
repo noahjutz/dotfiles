@@ -1,5 +1,5 @@
 usage: ./auto-install <operation>
 operations:
-	-h --help	Display this message
-	-f --full	Full installation
-	-m --minimal	Minimal installation
+	-h	Display this message
+	-f	Full installation
+	-m	Minimal installation
