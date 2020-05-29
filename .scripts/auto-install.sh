@@ -1,18 +1,25 @@
-#!/bin/sh
+#!/bin/bash
 
-# Initial setup #
+# parameters
+if [[ $1 == "-f" ]] || [[ $1 == "--full" ]];then
+	echo FULL
+elif [[ $1 == "-m" ]] || [[ $1 == "--minimal" ]];then
+	echo MINIMAL
+else
+	cat "help"
+	exit
+fi
 
+# git
 /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME config --local status.showUntrackedFiles no
 echo ".cfg" >> .gitignore
 
-# Install packages #
-
-sudo pacman -Syy
-sudo pacman -S --noconfirm fish yay code discord tor torbrowser-launcher htop virtualbox ranger etcher brave wipe gimp gvim
-yay -S android-studio bitwarden
-
-# Restore backup #
+# restore backup
 sh ~/.scripts/restore.sh
 
-# Change shell to fish #
+# change shell to fish
 chsh -s /bin/fish
+
+# packages
+sh ~/.scripts/install-packages.sh
+

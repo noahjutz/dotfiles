@@ -1,0 +1,5 @@
+usage: ./auto-install <operation>
+operations:
+	-h --help	Display this message
+	-f --full	Full installation
+	-m --minimal	Minimal installation
