@@ -2,9 +2,16 @@
 
 # parameters
 case $1 in
-	"-f" ) echo FULL;;
-	"-m" ) echo MINIMAL;;
-	* ) cat "help"; exit;;
+	"-f" )
+		echo FULL
+		;;
+	"-m" )
+		echo MINIMAL
+		;;
+	* )
+		cat "help"
+		exit
+		;;
 esac
 
 # git
