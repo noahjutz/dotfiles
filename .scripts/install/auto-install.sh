@@ -47,7 +47,19 @@ else
 	echo Start auto-install.
 fi
 
-if [[ $inp_cfg_repo != [Nn] ]]; then config_repo; fi
-if [[ $inp_restore != [Nn] ]]; then restore_backup; fi
-if [[ $inp_cfg_sh != [Nn] ]]; then config_shell; fi
-if [[ $inp_install_pkg != [Nn] ]]; then install_packages; fi
+if [[ $inp_cfg_repo != [Nn] ]]; then
+	config_repo
+	echo config_repo $?
+fi
+if [[ $inp_restore != [Nn] ]]; then
+	restore_backup
+	echo restore_backup $?
+fi
+if [[ $inp_cfg_sh != [Nn] ]]; then
+	config_shell
+	echo config_shell $?
+fi
+if [[ $inp_install_pkg != [Nn] ]]; then
+	install_packages
+	echo install_packages $?
+fi
