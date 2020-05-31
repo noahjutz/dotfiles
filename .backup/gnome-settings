@@ -78,7 +78,7 @@ show-battery-percentage=false
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-nautilus', 'gnome-power-panel', 'firefox', 'android-studio', 'brave-browser', 'org-manjaro-pamac-manager', 'balena-etcher-electron']
+application-children=['org-gnome-nautilus', 'gnome-power-panel', 'firefox', 'android-studio', 'brave-browser', 'org-manjaro-pamac-manager', 'balena-etcher-electron', 'telegramdesktop']
 show-banners=true
 
 [org/gnome/desktop/notifications/application/android-studio]
@@ -101,6 +101,9 @@ application-id='org.gnome.Nautilus.desktop'
 
 [org/gnome/desktop/notifications/application/org-manjaro-pamac-manager]
 application-id='org.manjaro.pamac.manager.desktop'
+
+[org/gnome/desktop/notifications/application/telegramdesktop]
+application-id='telegramdesktop.desktop'
 
 [org/gnome/desktop/peripherals/keyboard]
 numlock-state=true
@@ -201,8 +204,9 @@ hinting='slight'
 app-picker-view=uint32 1
 disable-user-extensions=false
 disabled-extensions=['nightshellswitcher@romainvigier.fr', 'nightthemeswitcher@romainvigier.fr', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'ding@rastersoft.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'arc-menu@linxgem33.com', 'wintile@nowsci.com', 'dash-to-panel@jderose9.github.com']
-enabled-extensions=['pamac-updates@manjaro.org', 'appindicatorsupport@rgcjonas.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'unite@hardpixel.eu']
+enabled-extensions=['pamac-updates@manjaro.org', 'appindicatorsupport@rgcjonas.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'unite@hardpixel.eu', 'dash-to-dock@micxgx.gmail.com']
 favorite-apps=['android-studio.desktop', 'brave-browser.desktop', 'torbrowser.desktop']
+remember-mount-password=false
 
 [org/gnome/shell/app-switcher]
 current-workspace-only=true
@@ -269,7 +273,7 @@ custom-theme-running-dots-border-width=0
 custom-theme-running-dots-color='#ffffff'
 custom-theme-shrink=true
 dash-max-icon-size=24
-dock-fixed=true
+dock-fixed=false
 dock-position='BOTTOM'
 extend-height=true
 force-straight-corner=false
@@ -428,10 +432,10 @@ selected-color=(true, 0.72941176470588232, 0.74117647058823533, 0.71372549019607
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=true
+show-hidden=false
 show-size-column=true
 show-type-column=true
-sidebar-width=163
+sidebar-width=170
 sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
