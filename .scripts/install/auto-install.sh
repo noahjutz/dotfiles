@@ -10,7 +10,7 @@ restore_backup() {
 }
 
 config_shell() {
-	chsh -s /bin/fish
+	chsh -s /usr/bin/fish
 }
 
 install_packages() {
