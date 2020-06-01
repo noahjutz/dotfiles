@@ -23,7 +23,7 @@ My linux configuration files.
 **Clone and checkout the repository**
 ```sh
 $ git clone --bare https://github.com/noahjutz/dotfiles $HOME/.cfg
-$ git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout
+$ git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout -f
 ```
 **Execute the auto-install script**
 ```sh
