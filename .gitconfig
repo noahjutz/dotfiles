@@ -1,3 +1,5 @@
 [user]
 	email = noah.jutz@gmail.com
 	name = Noah Jutz
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
