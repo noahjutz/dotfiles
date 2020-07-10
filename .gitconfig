@@ -5,10 +5,8 @@
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	lgs = lg -4
 	s = status -s
-	c = commit
-	cm = commit -m
 	ca = commit -a
 	cam = commit -a -m 
-	au = add -u
+	amend = commit --amend --no-edit
 [credential]
 	helper = store
