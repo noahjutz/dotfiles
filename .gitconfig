@@ -7,6 +7,6 @@
 	s = status -s
 	ca = commit -a
 	cam = commit -a -m 
-	amend = commit --amend --no-edit
+	amend = commit -a --amend --no-edit
 [credential]
 	helper = store
