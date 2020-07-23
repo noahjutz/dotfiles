@@ -10,3 +10,5 @@
 	amend = commit -a --amend --no-edit
 [credential]
 	helper = store
+[core]
+	editor = nvim
