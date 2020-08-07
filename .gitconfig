@@ -8,7 +8,7 @@
 	ca = commit -a
 	cam = commit -a -m 
 	amend = commit -a --amend --no-edit
-    new = !git init && git add . && git commit
+    new = !git init && git add . && git commit -m "Initial"
 [credential]
 	helper = store
 [core]
