@@ -1,5 +1,5 @@
 [user]
-	email = noahjutz@protonmail.com
+	email = noahjutz@tutanota.de
 	name = Noah Jutz
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
