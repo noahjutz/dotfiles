@@ -1,3 +1,7 @@
+**⚠️ ARCHIVED: Moved to https://github.com/noahjutz/newdotfiles**
+
+---
+
 # dotfiles
 My linux configuration files.
 
